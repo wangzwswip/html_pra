@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: skyblue;
+}
+body{
+    height: 200px;
+}
+/*******************************头部*******************************/
+#header{
+    height: 32px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 40px;
+}
+
+#header a{
+    color: #555555;
+    font-size: 13px;
+    
+    
+}
+
+#header .header-left{
+    width: 270;
+    height: 32px;
+    float: left;
+    line-height: 32px;
+}
+#header .header-left img{
+    height: 32px;
+    vertical-align: top;
+}
+#header .header-left a{
+    line-height: 32px;
+    margin-left: 8px;
+}
+
+
+#header .header-right{
+    width: 600px;
+    height: 100%;
+    float: right;
+    text-align: right;
+    line-height: 32px;
+}
+
+#header .header-right a{
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+#header .header-right a#kangji{
+    color: red;
+}
+
+#header .header-right .more-product{
+    display: inline-block;
+    background-color: #398bfb;
+    width: 86px;
+    height: 33px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+/*******************************搜索********************************/
+
+#content{
+    width: 641px;
+    height: 189px;
+    margin: 20px auto;
+}
+
+#content .logo{
+    text-align: center;
+}
+
+#content .logo img{
+    width: 270px;
+    height: 112px;
+}
+
+#content .search {
+    width: 100%;
+    height: 77px;
+    padding-top: 10px;
+}
+
+#content .search form{
+    width: 100%;
+    height: 44px;
+}
+
+#content .search form .search-input{
+    width: 536px;
+    height: 40px;
+    padding-left: 8px;
+    float: left;
+
+    /***去除外边框***/
+    outline: none;
+
+    /*****去除自带的阴影效果*******/
+    border:1px solid #e0e0e0
+}
+
+#content .search form .search-input:focus{
+    border-color: #398bfb;
+}
+
+#content .search-submit{
+    width: 105px;
+    height: 40px;
+    background-color: #398bfb;
+    border:none;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    /*****去除外边框*****/
+    outline: none;
+    
+}
+
+/********************************列表*******************************/
+
+#list{
+    width: 893px;
+    height: 600px;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+}
+
+#list .list-head{
+    height: 41px;
+    line-height: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#list .list-head .list-head-left{
+    float: left;
+     /*解决a之间的留白*/
+     font-size: 0px;
+}
+
+#list .list-head .list-head-left a{
+    display: inline-block;
+    height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #555555;
+    vertical-align: middle;
+
+}
+
+#list .list-head .list-head-left a:hover{
+    background-color: #cccccc;
+}
+
+
+#list .list-head .list-head-left a span{
+    vertical-align: middle;
+}
+
+#list .list-head .list-head-right{
+    float: right;
+    margin-right: 10px;
+}
+
+#list .list-head .list-head-right img{
+    vertical-align: middle;
+}
+
+#list .list-content{
+
+}
+
+#list .list-content .list-content-left{
+    width: 575px;
+    height: 600px;
+    float: left;
+    padding: 10px 5px 5px 10px;
+}
+
+#list .list-content .list-content-left .list-content-cell1{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+#list .list-content .list-content-left .list-content-cell1 h3{
+    margin-bottom: 10px;
+}
+
+#list .list-content .list-content-left .list-content-cell1 p{
+    margin: 10px 0;
+    color: #555555;
+    font-size: 12px;
+}
+
+#list .list-content .list-content-left .list-content-cell2{
+    padding: 20px 0;
+    height: 150px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#list .list-content .list-content-left .list-content-cell2 .pic{
+    float: left;
+}
+
+#list .list-content .list-content-left .list-content-cell2 .pic img{
+    vertical-align: middle;
+
+}
+
+#list .list-content .list-content-left .list-content-cell2 .text{
+    float: left;
+    width: 200px;
+    padding: 25px;
+}
+
+#list .list-content .list-content-left .list-content-cell2 .text h3{
+    margin-bottom: 10px;
+}
+
+#list .list-content .list-content-left .list-content-cell2 .text p{
+    argin: 10px 0;
+    color: #555555;
+    font-size: 12px;
+
+}
+#list .list-content .list-content-right{
+    width: 315px;
+    height: 600px;
+    float: left;
+}
+#list .list-content .list-content-right .right-top{
+    height: 60px;
+    width: 315px;
+    padding: 20px;
+}
+
+#list .list-content .list-content-right .right-top h4{
+    float: left;
+}
+#list .list-content .list-content-right .right-top div{
+    float: right;
+}
+#list .list-content .list-content-right .right-body{
+    padding: 0 20px;
+
+}
+
+#list .list-content .list-content-right .right-body li{
+    list-style: none;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    color: #666666;
+    font-size: 14px;
+}
+
+
