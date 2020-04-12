@@ -1,265 +1,114 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: skyblue;
+    list-style: none;
+    border: none;
 }
 body{
-    height: 200px;
+    background: url("../images/desktop.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-/*******************************头部*******************************/
+
+a{
+    text-decoration: none !important;
+    color: #000;
+}
+
+/*头部*/
 #header{
-    height: 32px;
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+
+    /**固定定位**/
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 18px;
+
 }
 
-#header a{
-    color: #555555;
-    font-size: 13px;
-    
-    
-}
-
-#header .header-left{
-    width: 270;
-    height: 32px;
+#header .header-left li{
     float: left;
-    line-height: 32px;
-}
-#header .header-left img{
-    height: 32px;
-    vertical-align: top;
-}
-#header .header-left a{
-    line-height: 32px;
-    margin-left: 8px;
-}
-
-
-#header .header-right{
-    width: 600px;
-    height: 100%;
-    float: right;
-    text-align: right;
-    line-height: 32px;
-}
-
-#header .header-right a{
-    font-weight: bolder;
     margin-left: 15px;
 }
-
-#header .header-right a#kangji{
-    color: red;
+ 
+#header .header-right li{
+    float: right;
+    margin-right: 15px;
 }
 
-#header .header-right .more-product{
-    display: inline-block;
-    background-color: #398bfb;
-    width: 86px;
-    height: 33px;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    vertical-align: top;
-}
-
-/*******************************搜索********************************/
-
+/***内容***/
 #content{
-    width: 641px;
-    height: 189px;
-    margin: 20px auto;
+    position: relative;
+}
+#content .file{
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
 }
 
-#content .logo{
+#content .file img{
+    width: 100%;
+}
+#content .file:nth-child(1){
+    left: 50px;
+    top: 80px;
+}
+#content .file:nth-child(2){
+    left: 50px;
+    top: 200px;
+}
+#content .file:nth-child(3){
+    left: 50px;
+    top: 340px;
+}
+/**尾部**/
+
+#footer{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     text-align: center;
 }
-
-#content .logo img{
-    width: 270px;
-    height: 112px;
-}
-
-#content .search {
-    width: 100%;
-    height: 77px;
-    padding-top: 10px;
-}
-
-#content .search form{
-    width: 100%;
-    height: 44px;
-}
-
-#content .search form .search-input{
-    width: 536px;
-    height: 40px;
-    padding-left: 8px;
-    float: left;
-
-    /***去除外边框***/
-    outline: none;
-
-    /*****去除自带的阴影效果*******/
-    border:1px solid #e0e0e0
-}
-
-#content .search form .search-input:focus{
-    border-color: #398bfb;
-}
-
-#content .search-submit{
-    width: 105px;
-    height: 40px;
-    background-color: #398bfb;
-    border:none;
-    float: left;
-    color: #fff;
-    font-size: 16px;
-    /*****去除外边框*****/
-    outline: none;
-    
-}
-
-/********************************列表*******************************/
-
-#list{
-    width: 893px;
-    height: 600px;
-    border: 1px solid #e0e0e0;
+#footer .dock{
+    background: url(../images/dock_bg.png);
+    width: 60%;
+    height: 100%;
     margin: 0 auto;
-}
 
-#list .list-head{
-    height: 41px;
-    line-height: 40px;
-    border-bottom: 1px solid #ebebeb;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
-
-#list .list-head .list-head-left{
-    float: left;
-     /*解决a之间的留白*/
-     font-size: 0px;
-}
-
-#list .list-head .list-head-left a{
+#footer .dock ul{
     display: inline-block;
-    height: 40px;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 0 10px;
-    color: #555555;
-    vertical-align: middle;
-
+   
 }
 
-#list .list-head .list-head-left a:hover{
-    background-color: #cccccc;
-}
-
-
-#list .list-head .list-head-left a span{
-    vertical-align: middle;
-}
-
-#list .list-head .list-head-right{
-    float: right;
-    margin-right: 10px;
-}
-
-#list .list-head .list-head-right img{
-    vertical-align: middle;
-}
-
-#list .list-content{
-
-}
-
-#list .list-content .list-content-left{
-    width: 575px;
-    height: 600px;
+#footer .dock ul li{
     float: left;
-    padding: 10px 5px 5px 10px;
-}
-
-#list .list-content .list-content-left .list-content-cell1{
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 5px;
-}
-
-#list .list-content .list-content-left .list-content-cell1 h3{
-    margin-bottom: 10px;
-}
-
-#list .list-content .list-content-left .list-content-cell1 p{
-    margin: 10px 0;
-    color: #555555;
-    font-size: 12px;
-}
-
-#list .list-content .list-content-left .list-content-cell2{
-    padding: 20px 0;
-    height: 150px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-#list .list-content .list-content-left .list-content-cell2 .pic{
-    float: left;
-}
-
-#list .list-content .list-content-left .list-content-cell2 .pic img{
-    vertical-align: middle;
+    margin: 0 13px;
+    /*设置动画过渡效果*/
+    transform: all 0.25s linear;
 
 }
 
-#list .list-content .list-content-left .list-content-cell2 .text{
-    float: left;
-    width: 200px;
-    padding: 25px;
+#footer .dock ul li img{
+    width: 50px;
 }
 
-#list .list-content .list-content-left .list-content-cell2 .text h3{
-    margin-bottom: 10px;
+/***动画***/
+#footer .dock ul li:hover{
+    /*设置方法方向*/
+    transform-origin: bottom center;
+    /*放大1.5倍*/
+    transform: scale(1.5);
 }
-
-#list .list-content .list-content-left .list-content-cell2 .text p{
-    argin: 10px 0;
-    color: #555555;
-    font-size: 12px;
-
-}
-#list .list-content .list-content-right{
-    width: 315px;
-    height: 600px;
-    float: left;
-}
-#list .list-content .list-content-right .right-top{
-    height: 60px;
-    width: 315px;
-    padding: 20px;
-}
-
-#list .list-content .list-content-right .right-top h4{
-    float: left;
-}
-#list .list-content .list-content-right .right-top div{
-    float: right;
-}
-#list .list-content .list-content-right .right-body{
-    padding: 0 20px;
-
-}
-
-#list .list-content .list-content-right .right-body li{
-    list-style: none;
-    width: 130px;
-    height: 40px;
-    line-height: 40px;
-    float: left;
-    color: #666666;
-    font-size: 14px;
-}
-
-
